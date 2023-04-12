@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+body {
+  background-color: #18171f;
+  color: white;
+  padding: 64px 16px 64px 16px;
+
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  color: #817d93;
+}
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.randomPassword {
+  width: 100%;
+  background-color: #24232c;
+  padding: 17px 16px 15px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.readyPassword {
+  color: #e6e5ea;
+  flex-shrink: 1;
+}
+
+.copyImage {
+  flex-shrink: 0;
+}
+.passwordOptions {
+  width: 100%;
+  margin-top: 16px;
+  background-color: #24232c;
+  padding: 16px;
+}
+
+.lenghtDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.number {
+  font-size: 24px;
+  color: #a4ffaf;
+}
+
+.slidecontainer {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(
+    to right,
+    #a4ffaf 0%,
+    #a4ffaf 50%,
+    #18171f 0%,
+    #18171f 100%
+  );
+  outline: none;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: #e6e5ea;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.slider::-webkit-slider-thumb:active,
+.slider::-webkit-slider-thumb:hover {
+  cursor: pointer;
+  background: #18171f;
+  border: 2px solid #a4ffaf;
+}
+
+.slider::-webkit-slider-runnable-track {
+  height: 30px;
+  width: 100%;
+}
+
+.choose {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+}
+.variant {
+  margin-left: 20px;
+}
+
+.inputBox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e6e5ea;
+  position: relative;
+  background-color: #18171f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.checked {
+  background-color: #a4ffaf;
+}
+
+.level {
+  background-color: #18171f;
+  width: 100%;
+  padding: 14px 16px 14px 16px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.strength {
+  color: #817d92;
+  line-height: 21px;
+}
+.strong-level {
+  font-size: 18px;
+  line-height: 24px;
+  color: #e6e5ea;
+}
+.levelBox {
+  width: 10px;
+  height: 28px;
+  background-color: #18171f;
+  margin-left: 8px;
+  border: 2px solid #e6e5ea;
+}
+.visualDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forPadding {
+  padding: 18px 100px 18px 100px;
+  color: #24232c;
+  line-height: 21px;
+  background-color: #a4ffaf;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-color: #a4ffaf;
+  width: 100%;
+}
+.forPadding:hover {
+  color: #a4ffaf;
+  background-color: #24232c;
+}
+.rightArrow {
+  margin-left: 16px;
+}
+.rightArrowGreen {
+  margin-left: 16;
+  display: none;
+}
+
+.span {
+  margin-right: 16px;
+}
+
+.requiredAllow {
+  color: red;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .randomPassword {
+    margin-top: 32px;
+    padding: 19px 28px 19px 32px;
+  }
+  .readyPassword {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .copyImage {
+    width: 21px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .passwordOptions {
+    margin-top: 24px;
+    padding: 24px 32px 32px 32px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .number {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .slidecontainer {
+    margin-top: 25px;
+  }
+  .variant {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .strength {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .strongLevel {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .forPadding {
+    padding: 21px 176px 21px 176px;
+
+    margin-top: 32px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
